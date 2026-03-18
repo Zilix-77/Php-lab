@@ -1,9 +1,15 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "lab_app";
+$conn = mysqli_connect(
+    "sql104.infinityfree.com",
+    "if0_41418657",
+    "BV8zzMKAdHTvsv1",
+    "if0_41418657_lab_app"
+);
 
+if(!$conn){
+    die("Connection failed");
+}
+?>
 // 👉 change only when deploying
 // $host = "sqlXXX.epizy.com";
 // $user = "your_user";
